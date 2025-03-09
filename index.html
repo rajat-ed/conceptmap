@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Concept Map Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="input-panel">
+        <h1>Concept Map Generator</h1>
+        <input type="password" id="api-key" placeholder="Enter your Gemini API Key" />
+        <a href="https://aistudio.google.com/apikey" target="_blank" id="api-link">Click here to get your Gemini API</a>
+        <textarea id="input-text" placeholder="Enter your educational text here..." rows="8"></textarea>
+        <button id="generate-button">Generate Concept Map</button>
+        <button id="clear-button">Clear All</button>
+        <button id="export-png-button" style="display: none;">Export to PNG</button>
+        <div id="error-message"></div>
+        <div id="loading-indicator">Generating... Please wait.</div>
+    </div>
+    <div id="concept-map-container">
+        <div id="concept-map"></div>
+        <div id="footer">Concept map generator by Rajat</div>
+    </div>
+    <div id="text-display">
+        <h2>Node Details</h2>
+        <p>Hover over a node to see more information.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
