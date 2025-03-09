@@ -1,0 +1,7 @@
+# Common system files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.idea/
+*.log
